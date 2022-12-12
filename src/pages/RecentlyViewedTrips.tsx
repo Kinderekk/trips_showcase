@@ -14,17 +14,15 @@ function RecentlyViewedTrips() {
     if (dataFetchedRef.current) return;
     setIsLoading(true);
     dataFetchedRef.current = true;
-    setTimeout(() => {
-      getRecentlyViewedTrips()
-        .then(data => {
-          setRecentlyViewedTrips(data);
-          setIsLoading(false);
-        })
-        .catch(() => {
-          setIsError(true);
-          setIsLoading(false);
-        })
-    }, 5000);
+    getRecentlyViewedTrips()
+      .then(data => {
+        setRecentlyViewedTrips(data);
+        setIsLoading(false);
+      })
+      .catch(() => {
+        setIsError(true);
+        setIsLoading(false);
+      })
   }, [])
 
   return (
