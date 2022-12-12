@@ -41,9 +41,11 @@ function TripContainer({ trip }: Props) {
           <div className="current-price">
             From {convertToMoney(trip.currentPrice, '€')}
           </div>
-          {trip.beforePrice && (<div className="before-price">
-            Price {convertToMoney(trip.beforePrice, '€')}
-          </div>)}
+          {trip.beforePrice && (
+            <div className="before-price">
+             Price {convertToMoney(trip.beforePrice, '€')}
+            </div>
+          )}
         </div>
       </div>
     </div>
