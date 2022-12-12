@@ -9,3 +9,7 @@
 ### `yarn`
 
 ### `yarn start`
+
+## To add or change recently viewed trips
+
+### Go to `public` -> `api` -> `db.json`

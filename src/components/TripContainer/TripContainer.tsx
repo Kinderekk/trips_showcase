@@ -1,6 +1,7 @@
 import { Trip } from '../../types/trip';
 import convertToMoney from '../../utility/convertToMoney';
 import getProperString from '../../utility/getProperString';
+import ReactStars from 'react-stars'
 import './TripContainer.scss';
 
 interface Props {
@@ -26,15 +27,23 @@ function TripContainer({ trip }: Props) {
           {trip.name}
         </div>
         <div className="trip-rating">
-          rating
+          <ReactStars
+            value={trip.rate}
+            size={20}
+            count={5}
+            edit={false}
+          />
+          <div className="rate-value">
+            {trip.rate}
+          </div>
         </div>
         <div className="trip-price">
           <div className="current-price">
             From {convertToMoney(trip.currentPrice, '€')}
           </div>
-          <div className="before-price">
-            Price {convertToMoney(trip.currentPrice, '€')}
-          </div>
+          {trip.beforePrice && (<div className="before-price">
+            Price {convertToMoney(trip.beforePrice, '€')}
+          </div>)}
         </div>
       </div>
     </div>
