@@ -1,0 +1,32 @@
+{
+  "recently_viewed_trips": [
+    {
+      "id": 1,
+      "name": "European Quest",
+      "rate": 4.6,
+      "currentPrice": 2877,
+      "beforePrice": 3385,
+      "numberOfCountries": 11,
+      "numberOfDays": 25,
+      "image": "TODO url"
+    }, {
+      "id": 2,
+      "name": "Simply Italy",
+      "rate": 4.4,
+      "currentPrice": 1832,
+      "beforePrice": 2155,
+      "numberOfCountries": 2,
+      "numberOfDays": 15,
+      "image": "TODO url"
+    }, {
+      "id": 3,
+      "name": "Italian Espresso",
+      "rate": 4.5,
+      "currentPrice": 1245,
+      "beforePrice": 1465,
+      "numberOfCountries": 1,
+      "numberOfDays": 10,
+      "image": "TODO url"
+    }
+  ]
+}
