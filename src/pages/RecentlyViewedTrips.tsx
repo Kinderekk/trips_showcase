@@ -18,7 +18,7 @@ function RecentlyViewedTrips() {
 
   return (
     <>
-      <h2>Recently viewed trips</h2>
+      <h2 className="title">Recently viewed trips</h2>
       <div className="trips-container">
         {recentlyViewedTrips && (
           recentlyViewedTrips.map(trip => (
