@@ -26,16 +26,14 @@ function RecentlyViewedTrips() {
   }, [])
 
   return (
-    <>
+    <div className="page-container">
+      <h2 className="title">Recently viewed trips</h2>
       {recentlyViewedTrips && (
-        <>
-          <h2 className="title">Recently viewed trips</h2>
-          <div className="trips-container">
-            {recentlyViewedTrips.map(trip => (
-              <TripContainer key={trip.id} trip={trip} />
-            ))}
-          </div>
-        </>
+        <div className="trips-container">
+          {recentlyViewedTrips.map(trip => (
+            <TripContainer key={trip.id} trip={trip} />
+          ))}
+        </div>
       )}
       {isError && (
         <div className="error">There was an error when getting informations from server</div>
@@ -45,7 +43,7 @@ function RecentlyViewedTrips() {
           <div className="loader" />
         </div>
       )}
-    </>
+    </div>
   );
 }
 
