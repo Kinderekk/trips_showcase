@@ -12,7 +12,7 @@ function TripContainer({ trip }: Props) {
   return (
     <div className="trip-container">
       <div className="trip-image">
-        <img className="image" src={trip.image} alt={trip.name} title={trip.name} />
+        <img src={trip.image} alt={trip.name} title={trip.name} />
       </div>
       <div className="trip-informations">
         <div className="trip-additional-informations">
